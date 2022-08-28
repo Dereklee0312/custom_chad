@@ -1,0 +1,24 @@
+Add lsp configs
+
+Add telescope configs: use ctrl j and k for up and down
+
+Add treesitter parsers
+
+Add dashboard
+
+Add keymaps: split screen: sv and ss
+             New tabs: TT
+             Telescope find file: Alt + f
+             Telescope find word: Alt + r
+             yy to save only from start line: ^y$ smth like that
+             ctrl + a to select all
+             W to close pane
+             switch focus on buffers with ctrl + h j k l
+             
+
+New options: tab with 4
+             no wrap line
+             no swap file
+             no redo file
+             
+

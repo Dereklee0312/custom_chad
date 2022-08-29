@@ -20,5 +20,3 @@ New options: tab with 4
              no wrap line
              no swap file
              no redo file
-             
-

@@ -11,7 +11,10 @@ local servers = {
     "pyright",
 
     -- Bash
-    "bashls"
+    "bashls",
+
+    -- Sql
+    "sqlls",
 }
 
 for _, lsp in ipairs(servers) do

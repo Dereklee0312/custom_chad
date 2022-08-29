@@ -38,6 +38,9 @@ M.mason = {
 
     -- Bash
     "bash-language-server",
+
+    -- sql
+    "sqlls",
   },
 }
 

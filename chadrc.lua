@@ -8,7 +8,7 @@ local override = require "custom.override"
 -- example of changing theme:
 
 M.ui = {
-  theme = "tokyonight",
+  theme = "palenight",
   transparency = "true",
 }
 

@@ -15,6 +15,9 @@ local servers = {
 
     -- Sql
     "sqlls",
+
+    -- Javascript
+    "quick_lint_js",
 }
 
 for _, lsp in ipairs(servers) do

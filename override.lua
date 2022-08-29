@@ -41,6 +41,9 @@ M.mason = {
 
     -- sql
     "sqlls",
+
+    -- javascript
+    "quick-lint-js",
   },
 }
 

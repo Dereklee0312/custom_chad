@@ -44,6 +44,7 @@ M.mason = {
 
     -- javascript
     "quick-lint-js",
+    "typescript-language-server",
   },
 }
 

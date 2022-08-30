@@ -22,6 +22,7 @@ return {
         end,
     },
 
+    -- Reconfigured blankline for context highlight indenting and rainbow indents
     ["lukas-reineke/indent-blankline.nvim"] = {
         config = function()
             require "custom.plugins.configs.blankline"

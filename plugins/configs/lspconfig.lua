@@ -18,6 +18,7 @@ local servers = {
 
     -- Javascript
     "quick_lint_js",
+    "tsserver"
 }
 
 for _, lsp in ipairs(servers) do

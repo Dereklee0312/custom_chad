@@ -23,17 +23,15 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- lspconfig["sqlls"].setup {
---     init_options = {
---         hostInfo = "neovim",
---     },
---     on_attach = on_attach,
---     capabilities = capabilities,
---     root_dir = function(fname)
---         return lspconfig.util.root_pattern '*.sql'(fname)
---         -- or lspconfig.util.root_pattern '.sqllsrc.json'(fname)
---     end,
--- }
+lspconfig.sqlls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    -- root_dir = function(fname)
+    --     return lspconfig.util.root_pattern '*.sql'(fname)
+    --     or lspconfig.util.root_pattern '.sqllsrc.json'(fname)
+    -- end,
+    root_dir = vim.loop.cwd,
+}
 
 lspconfig.tsserver.setup({
 		init_options = {

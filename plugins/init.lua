@@ -28,4 +28,15 @@ return {
             require "custom.plugins.configs.blankline"
         end,
     },
+
+    ["nvim-treesitter/nvim-treesitter-context"] = {
+        config = function()
+            require "custom.plugins.configs.tscontext"
+        end,
+    }
+
+    -- Python syntax highlighting
+    -- ["numirias/semshi"] = {
+    --     run = ':UpdateRemotePlugins',
+    -- }
 }

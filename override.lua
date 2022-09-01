@@ -2,25 +2,39 @@
 local M = {}
 
 M.treesitter = {
-  ensure_installed = {
-    "vim",
-    "html",
-    "css",
-    "javascript",
-    "json",
-    "markdown",
-    "c",
-    "bash",
-    "lua",
-    "python",
-    "java",
-    "c_sharp"
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true,
-    max_file_lines = nil,
-  },
+    -- Install parsers synchronously (only applied to `ensure_installed`)
+    sync_install = true,
+
+    -- Automatically install missing parsers when entering buffer
+    auto_install = true,
+
+    highlight = {
+        enable = true,
+        -- disable = { "python" },
+    },
+    indent = {
+        enable = true,
+        disable = {},
+    },
+    ensure_installed = {
+        "vim",
+        "html",
+        "css",
+        "javascript",
+        "json",
+        "markdown",
+        "c",
+        "bash",
+        "lua",
+        "python",
+        "java",
+        "c_sharp"
+    },
+    rainbow = {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = nil,
+    },
 }
 
 M.mason = {

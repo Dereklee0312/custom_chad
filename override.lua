@@ -43,7 +43,6 @@ M.mason = {
     "sqlls",
 
     -- javascript
-    "quick-lint-js",
     "typescript-language-server",
   },
 }

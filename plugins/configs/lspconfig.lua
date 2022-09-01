@@ -14,10 +14,6 @@ local servers = {
     "bashls",
 
     "sqlls",
-
-    -- Javascript
-    "quick_lint_js",
-    "tsserver"
 }
 
 for _, lsp in ipairs(servers) do
@@ -28,7 +24,25 @@ for _, lsp in ipairs(servers) do
 end
 
 -- lspconfig["sqlls"].setup {
+--     init_options = {
+--         hostInfo = "neovim",
+--     },
 --     on_attach = on_attach,
 --     capabilities = capabilities,
---     -- root_dir = lspconfig.util.root_pattern "*.sql",
+--     root_dir = function(fname)
+--         return lspconfig.util.root_pattern '*.sql'(fname)
+--         -- or lspconfig.util.root_pattern '.sqllsrc.json'(fname)
+--     end,
 -- }
+
+lspconfig.tsserver.setup({
+		init_options = {
+			hostInfo = "neovim",
+		},
+		on_attach = on_attach,
+		capabilities = capabilities,
+        root_dir = function(fname)
+            return lspconfig.util.root_pattern '*.js'(fname)
+            or lspconfig.util.root_pattern('package.json', 'jsconfig.json', '.git')(fname)
+        end,
+	})

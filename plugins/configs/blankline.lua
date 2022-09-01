@@ -10,8 +10,6 @@ vim.opt.list = true
 
 require("indent_blankline").setup {
     space_char_blankline = " ",
-    -- indent_blankline_space_char_blankline = ' ',
-    -- indent_blankline_show_end_of_line = false,
     show_current_context = true,
     show_current_context_start = true,
     vim.cmd [[highlight IndentBlanklineContextChar guifg=#ffffff gui=nocombine]],

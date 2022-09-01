@@ -13,7 +13,6 @@ local servers = {
     -- Bash
     "bashls",
 
-    -- Sql
     "sqlls",
 
     -- Javascript
@@ -27,3 +26,9 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- lspconfig["sqlls"].setup {
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+--     -- root_dir = lspconfig.util.root_pattern "*.sql",
+-- }

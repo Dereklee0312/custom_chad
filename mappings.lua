@@ -30,6 +30,8 @@ M.general = {
     ["sl"] = { "<C-w>l", "window right" },
     ["sj"] = { "<C-w>j", "window down" },
     ["sk"] = { "<C-w>k", "window up" },
+    -- Opening lazy git
+    ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
   },
 }
 

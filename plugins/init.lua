@@ -39,6 +39,8 @@ return {
             require "custom.plugins.configs.tscontext"
         end,
     },
+
+    ["kdheepak/lazygit.nvim"] = {},
 --------------------------------------------------------------------------------------
     -- Overriding configs
     ["nvim-treesitter/nvim-treesitter"] = {
@@ -50,6 +52,6 @@ return {
 
 --------------------------------------------------------------------------------------
     -- Removing plugins
-    ["NvChad/nvterm"] = false,
+    -- ["NvChad/nvterm"] = false,
     ["numToStr/Comment.nvim"] = false,
 }

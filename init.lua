@@ -18,3 +18,5 @@ opt.relativenumber = true
 vim.opt.wrap = false -- No wrap lines
 vim.cmd('noswapfile')
 vim.opt.backup = false
+vim.opt.scrolloff = 10
+vim.opt.sidescrolloff = 20

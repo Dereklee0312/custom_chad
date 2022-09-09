@@ -1,6 +1,10 @@
 -- custom/plugins/init.lua return table of plugins
 
+local override = require "custom.override"
+
 return {
+----------------------------------------------------------------------------------------
+    -- Installing new plugins
     ["p00f/nvim-ts-rainbow"] = {},
 
     -- Custom lsp config
@@ -29,14 +33,23 @@ return {
         end,
     },
 
+    -- Holds context of current line
     ["nvim-treesitter/nvim-treesitter-context"] = {
         config = function()
             require "custom.plugins.configs.tscontext"
         end,
-    }
+    },
+--------------------------------------------------------------------------------------
+    -- Overriding configs
+    ["nvim-treesitter/nvim-treesitter"] = {
+        override_options = override.treesitter,
+    },
+    ["williamboman/mason.nvim"] = {
+        override_options = override.mason,
+    },
 
-    -- Python syntax highlighting
-    -- ["numirias/semshi"] = {
-    --     run = ':UpdateRemotePlugins',
-    -- }
+--------------------------------------------------------------------------------------
+    -- Removing plugins
+    ["NvChad/nvterm"] = false,
+    ["numToStr/Comment.nvim"] = false,
 }

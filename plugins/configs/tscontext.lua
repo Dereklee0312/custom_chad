@@ -11,9 +11,9 @@ require'treesitter-context'.setup{
             'class',
             'function',
             'method',
-            -- 'for', -- These won't appear in the context
+            'for', -- These won't appear in the context
             'while',
-            -- 'if',
+            'if',
             -- 'switch',
             -- 'case',
         },
@@ -34,6 +34,6 @@ require'treesitter-context'.setup{
     --     you can safely ignore them.
 
     zindex = 20, -- The Z-index of the context window
-    mode = 'cursor',  -- Line used to calculate context. Choices: 'cursor', 'topline'
+    mode = 'topline',  -- Line used to calculate context. Choices: 'cursor', 'topline'
     separator = nil, -- Separator between context and content. Should be a single character string, like '-'.
 }

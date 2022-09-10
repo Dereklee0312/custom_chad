@@ -50,7 +50,10 @@ return {
         override_options = override.mason,
     },
     ["NvChad/ui"] = {
-        override_options = override.stat
+        override_options = override.stat,
+    },
+    ["kyazdani42/nvim-tree.lua"] = {
+        override_options = override.ntree,
     },
 
 --------------------------------------------------------------------------------------

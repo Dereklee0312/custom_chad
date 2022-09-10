@@ -61,4 +61,12 @@ M.mason = {
   },
 }
 
+M.stat = {
+    statusline = {
+        separator_style = "round",
+        overriden_modules = function()
+            return require "custom.plugins.configs.statusline"
+        end,
+    },
+}
 return M

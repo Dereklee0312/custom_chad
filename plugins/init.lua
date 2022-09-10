@@ -49,6 +49,9 @@ return {
     ["williamboman/mason.nvim"] = {
         override_options = override.mason,
     },
+    ["NvChad/ui"] = {
+        override_options = override.stat
+    },
 
 --------------------------------------------------------------------------------------
     -- Removing plugins

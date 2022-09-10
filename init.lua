@@ -10,6 +10,8 @@ opt.undofile = false
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.smartindent = true
+opt.autoindent = true
+opt.smarttab = true
 opt.tabstop = 4
 opt.softtabstop = 4
 
@@ -20,3 +22,5 @@ vim.cmd('noswapfile')
 vim.opt.backup = false
 vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 20
+
+vim.g.lazygit_floating_window_scaling_factor = 0.95

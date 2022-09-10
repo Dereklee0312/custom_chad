@@ -52,6 +52,6 @@ return {
 
 --------------------------------------------------------------------------------------
     -- Removing plugins
-    -- ["NvChad/nvterm"] = false,
+    ["NvChad/nvterm"] = false,
     ["numToStr/Comment.nvim"] = false,
 }

@@ -80,6 +80,13 @@ M.ntree = {
         icons = {
             show = { git = true}
         }
-    }
+    },
+    view = {
+        adaptive_size = false,
+    },
+    update_focused_file = {
+        enable = true,
+        update_cwd = false,
+    },
 }
 return M

@@ -41,6 +41,12 @@ return {
     },
 
     ["kdheepak/lazygit.nvim"] = {},
+
+    ["NvChad/ui"] = {
+		config = function()
+			require("custom.ui").setup()
+		end,
+	},
 --------------------------------------------------------------------------------------
     -- Overriding configs
     ["nvim-treesitter/nvim-treesitter"] = {
@@ -49,9 +55,9 @@ return {
     ["williamboman/mason.nvim"] = {
         override_options = override.mason,
     },
-    ["NvChad/ui"] = {
-        override_options = override.stat,
-    },
+    -- ["NvChad/ui"] = {
+    --     override_options = override.stat,
+    -- },
     ["kyazdani42/nvim-tree.lua"] = {
         override_options = override.ntree,
     },

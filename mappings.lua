@@ -16,7 +16,8 @@ M.general = {
     ["<C-a>"] = {"gg<S-v>G", "select all"},
 
     -- Copy whole line without the newline
-    ["yy"] = {"^y$", "Copy whole line without newline"},
+    ["YY"] = {"^y$", "Copy whole line without newline"},
+
     -- New tab
     ["TT"] = { ":tabedit ", "Create new tab"},
 

@@ -1,7 +1,7 @@
 local M = {}
 
 M.override = {
-	Comment = { fg = "#767676", bold = true, italic = true, },
+	Comment = { fg = "#767676", bold = false, italic = true, },
 	markdownError = { link = "Normal" },
 	Folded = { fg = "blue", },
 	LineNr = { fg = "light_grey" },

@@ -66,4 +66,5 @@ return {
     -- Removing plugins
     ["NvChad/nvterm"] = false,
     ["numToStr/Comment.nvim"] = false,
+    ["folke/which-key.nvim"] = false,
 }

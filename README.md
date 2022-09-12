@@ -54,10 +54,10 @@ Telescope is one of the core features of neovim in general.
 - Can search throughout the files according to words.
 
 To display all the keymaps that have been set in normal mode:
-> <leader>-tk
+> \<leader\>-tk
 
 To preview themes and change:
-> <leader>-th
+> \<leader\>-th
 
 To open file explorer and search based on file name:
 > Alt-r

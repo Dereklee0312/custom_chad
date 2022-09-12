@@ -25,7 +25,9 @@ The features implemented with this configuration are:
 
 # Requirements
 1 -> Should have a nerd font installed for emojis
+
 2 -> Lazygit should already be installed from the [github repo](https://github.com/jesseduffield/lazygit)
+
 3 -> Basic understanding of Neovim
 
 # Setup

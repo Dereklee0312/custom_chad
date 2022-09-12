@@ -5,6 +5,11 @@ date: 12 September 2022
 ---
 # Description
 
+It is recommended to first start with a fresh neovim config to learn the basics of VIM as a modal editor.
+Furthermore, the configuration is done in `LUA` language. Thus, it would be helpful to learn about some lua syntax to understand how everything is configured.
+
+For more info about the core configuration, visit the NVCHAD [Doc](https://nvchad.com/quickstart/install)
+
 This repo may be cloned to extend the underlying nvchad neovim configs.
 
 ## Features
@@ -20,4 +25,20 @@ The features implemented with this configuration are:
 
 # Requirements
 1 -> Should have a nerd font installed for emojis
-2 -> Lazygit should already be installed [Link to github repo](https://github.com/jesseduffield/lazygit)
+2 -> Lazygit should already be installed from the [github repo](https://github.com/jesseduffield/lazygit)
+3 -> Basic understanding of Neovim
+
+# Setup
+i. Clone the nvchad repo
+> `git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim`
+
+ii. Remove the custom folder as shown in picture
+![File structure](SS/file_structure.png)
+
+iii. Clone my repo in the same directory; i.e the lua directory
+
+iv. Since it has been configured such that the core features recognize only the `custom` directory, rename the folder to custom.
+
+V. When re-entering neovim, do:
+> `:PackerSync`
+This will ensure that the new custom configs overwrite the nvchad core features.

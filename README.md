@@ -20,3 +20,4 @@ The features implemented with this configuration are:
 
 # Requirements
 1 -> Should have a nerd font installed for emojis
+2 -> Lazygit should already be installed from the following link : `https://github.com/jesseduffield/lazygit`

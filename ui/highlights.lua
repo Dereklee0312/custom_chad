@@ -36,8 +36,8 @@ M.override = {
 
 M.add = {
 	-- By default NvChad doesn't have these hlgroups changed
-	NvimTreeOpenedFolderName = { fg = "nord_blue", bold = true, italic = true },
-	NvimTreeOpenedFile = { fg = "nord_blue", bold = true },
+	NvimTreeOpenedFolderName = { fg = "teal", bold = true, italic = true },
+	NvimTreeOpenedFile = { fg = "teal", bold = true },
 	NvimTreeExecFile = { fg = "green" },
 
 	--------Custom Statusline coloring-----------------

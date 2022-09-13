@@ -16,21 +16,24 @@ This repo may be cloned to extend the underlying nvchad neovim configs.
 
 The features implemented with this configuration are:
 - Custom nvchad themes
-- Revamped status line 
+- Revamped status line
 - `Telescope` plugin for file explorer
 - `Nvim tree` for file explorer similar to VSCode
 - Syntax highlighting with `Treesitter`
 - Neovim integration of `lazygit` for a git UI
 - Custom Indent highlighting with `blankline`
+- Auto completion and Linter with `LSP`
 
 # Requirements
-1 -> Should have a nerd font installed for emojis
+1 -> Should have a nerd font installed for icons
 
 2 -> Lazygit should already be installed from the [github repo](https://github.com/jesseduffield/lazygit)
 
 3 -> Should have npm installed for webdev tools and language servers/auto completion
 
 4 -> Basic understanding of Neovim
+
+5 -> Make sure that neovim version is above 0.7. Check with `nvim --version`
 
 # Setup
 i. Clone the nvchad repo
@@ -70,4 +73,3 @@ To open file explorer and search based on file name:
 
 To open file explorer and search based on word in the file:
 > Alt-f
-

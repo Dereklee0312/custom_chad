@@ -58,7 +58,6 @@ return {
     ["kyazdani42/nvim-tree.lua"] = {
         override_options = override.ntree,
     },
-
 --------------------------------------------------------------------------------------
     -- Removing plugins
     ["NvChad/nvterm"] = false,

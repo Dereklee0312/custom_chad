@@ -1,6 +1,6 @@
 ---
 title: "Attempt to create a custom neovim config with nvchad as a base"
-author: Derek Lee Nen That
+author: Derek Lee
 date: 12 September 2022
 ---
 # Description

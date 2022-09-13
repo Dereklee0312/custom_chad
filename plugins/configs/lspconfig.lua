@@ -13,7 +13,8 @@ local servers = {
     -- Bash
     "bashls",
 
-    "sqlls",
+    -- SQL
+    "sqls",
 }
 
 for _, lsp in ipairs(servers) do

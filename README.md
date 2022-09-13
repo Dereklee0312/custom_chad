@@ -28,7 +28,9 @@ The features implemented with this configuration are:
 
 2 -> Lazygit should already be installed from the [github repo](https://github.com/jesseduffield/lazygit)
 
-3 -> Basic understanding of Neovim
+3 -> Should have npm installed for webdev tools and language servers/auto completion
+
+4 -> Basic understanding of Neovim
 
 # Setup
 i. Clone the nvchad repo
@@ -44,6 +46,7 @@ iv. Since it has been configured such that the core features recognize only the 
 V. When re-entering neovim, do:
 > `:PackerSync`
 > `:MasonInstallAll`
+
 This will ensure that the new custom configs overwrite the nvchad core features.
 
 # Main features explanation

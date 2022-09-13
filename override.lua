@@ -54,7 +54,7 @@ M.mason = {
     "bash-language-server",
 
     -- sql
-    "sqlls",
+    "sqls",
 
     -- javascript
     "typescript-language-server",

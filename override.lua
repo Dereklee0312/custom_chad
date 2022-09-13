@@ -6,7 +6,7 @@ M.treesitter = {
     sync_install = true,
 
     -- Automatically install missing parsers when entering buffer
-    auto_install = true,
+    auto_install = false,
 
     highlight = {
         enable = true,
@@ -59,15 +59,6 @@ M.mason = {
     -- javascript
     "typescript-language-server",
   },
-}
-
-M.stat = {
-    statusline = {
-        separator_style = "round",
-        overriden_modules = function()
-            return require "custom.plugins.configs.statusline"
-        end,
-    },
 }
 
 M.ntree = {

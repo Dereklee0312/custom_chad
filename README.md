@@ -43,6 +43,7 @@ iv. Since it has been configured such that the core features recognize only the 
 
 V. When re-entering neovim, do:
 > `:PackerSync`
+> `:MasonInstallAll`
 This will ensure that the new custom configs overwrite the nvchad core features.
 
 # Main features explanation

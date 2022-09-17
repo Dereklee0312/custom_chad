@@ -35,6 +35,8 @@ The features implemented with this configuration are:
 
 5 -> Make sure that neovim version is above 0.7. Check with `nvim --version`
 
+6 -> Install ripgrep
+
 # Setup
 i. Clone the nvchad repo
 > `git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim`

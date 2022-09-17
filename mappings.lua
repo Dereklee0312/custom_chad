@@ -43,7 +43,49 @@ M.telescope = {
     -- find
     ["<A-r>"] = { "<cmd> Telescope find_files <CR>", "find files" },
     ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
+
+    -- Diagnostics
+    ["<A-e>"] = {
+        function()
+            require "plugins.configs.telescope"
+            require "custom.plugins.configs.telescope"
+            require("telescope.builtin").diagnostics({
+                    no_unlisted = false,
+                    no_sign = true,
+                    line_width = 200,
+                })
+            end,
+        "Show diagnostics with telescope"
+        },
   },
+}
+
+M.lspconfig = {
+    plugin = true,
+
+    n = {
+        -- Diagnostics
+        ["<A-d>"] = {
+            function()
+                vim.diagnostic.config({virtual_text = false})
+            end,
+            "Hide diagnostics"
+        },
+
+        ["<A-E>"] = {
+            function()
+                vim.diagnostic.config({virtual_text = true})
+            end,
+            "Show in-line diagnostics"
+        },
+
+        -- JUMPING
+
+        ["gr"] = {":Telescope lsp_references <CR>", "lsp references"},
+        ["gi"] = {":Telescope lsp_implementations <CR>", "lsp implementation"},
+        ["gd"] = {":Telescope lsp_definitions <CR>", "lsp definition"},
+        ["<leader>D"] = {":Telescope lsp_type_definitions <CR>", "lsp type definition"},
+    }
 }
 
 return M

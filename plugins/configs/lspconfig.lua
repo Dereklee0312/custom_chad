@@ -35,3 +35,5 @@ lspconfig.tsserver.setup({
             or lspconfig.util.root_pattern('package.json', 'jsconfig.json', '.git')(fname)
         end,
 	})
+
+vim.diagnostic.config({virtual_text = false})

@@ -81,11 +81,25 @@ M.lspconfig = {
         },
 
         -- JUMPING
-
         ["gr"] = {":Telescope lsp_references <CR>", "lsp references"},
         ["gi"] = {":Telescope lsp_implementations <CR>", "lsp implementation"},
         ["gd"] = {":Telescope lsp_definitions <CR>", "lsp definition"},
         ["<leader>D"] = {":Telescope lsp_type_definitions <CR>", "lsp type definition"},
+    }
+}
+
+M.nvterm = {
+    plugin = true,
+
+    n = {
+        -- toggle in normal mode
+        ["<A-l>"] = {
+            function()
+                require("nvterm.terminal").send("cd " .. vim.fn.getcwd(),"vertical")
+                -- require("nvterm.terminal").toggle "float"
+            end,
+            "Open new vertical split terminal in pwd",
+        },
     }
 }
 

@@ -45,14 +45,15 @@ M.telescope = {
     ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
 
     -- Diagnostics
-    ["<A-e>"] = {
-        function()
-            require "plugins.configs.telescope"
-            require "custom.plugins.configs.telescope"
-            require("telescope.builtin").diagnostics({
+        ["<A-e>"] = {
+            function()
+                require "plugins.configs.telescope"
+                require "custom.plugins.configs.telescope"
+
+                require("telescope.builtin").diagnostics({
                     no_unlisted = false,
                     no_sign = true,
-                    line_width = 200,
+                    line_width = 50,
                 })
             end,
         "Show diagnostics with telescope"

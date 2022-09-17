@@ -24,5 +24,3 @@ vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 20
 
 vim.g.lazygit_floating_window_scaling_factor = 0.95
-
-vim.g.diagnostic.config({virtual_text = false})

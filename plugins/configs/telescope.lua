@@ -22,11 +22,6 @@ local options = {
             },
         },
         extensions_list = { "themes", "terms" },
-        -- builtin.diagnostics({
-        --     no_sign = true,
-        --     line_width = 200,
-        --     bufnr = 0,
-        -- })
     },
 }
 -- check for any override
@@ -39,9 +34,3 @@ pcall(function()
         telescope.load_extension(ext)
     end
 end)
-
--- builtin.diagnostics({
---     no_sign = true,
---     line_width = 200,
---     bufnr = 0,
--- })

@@ -40,13 +40,13 @@ return {
         end,
     },
 
-    ["kdheepak/lazygit.nvim"] = {},
-
     ["NvChad/ui"] = {
 		config = function()
 			require("custom.ui").setup()
 		end,
 	},
+
+    ["kdheepak/lazygit.nvim"] = {},
 --------------------------------------------------------------------------------------
     -- Overriding configs
     ["nvim-treesitter/nvim-treesitter"] = {

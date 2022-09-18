@@ -26,6 +26,7 @@ M.general = {
     ["sv"] = { ":vsplit<Return><C-w>w", "Split window vertically"},
 
     ["W"] = {":q<Return>", "Close window"},
+    ["<A-W>"] = {":wq <CR>", "Save and close"},
     -- Changing window focus
     ["sh"] = { "<C-w>h", "window left" },
     ["sl"] = { "<C-w>l", "window right" },
@@ -85,21 +86,6 @@ M.lspconfig = {
         ["gi"] = {":Telescope lsp_implementations <CR>", "lsp implementation"},
         ["gd"] = {":Telescope lsp_definitions <CR>", "lsp definition"},
         ["<leader>D"] = {":Telescope lsp_type_definitions <CR>", "lsp type definition"},
-    }
-}
-
-M.nvterm = {
-    plugin = true,
-
-    n = {
-        -- toggle in normal mode
-        ["<A-l>"] = {
-            function()
-                require("nvterm.terminal").send("cd " .. vim.fn.getcwd(),"vertical")
-                -- require("nvterm.terminal").toggle "float"
-            end,
-            "Open new vertical split terminal in pwd",
-        },
     }
 }
 

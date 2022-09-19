@@ -28,12 +28,17 @@ M.general = {
     ["W"] = {":q<Return>", "Close window"},
     ["<A-W>"] = {":wq <CR>", "Save and close"},
     -- Changing window focus
+        --
     ["sh"] = { "<C-w>h", "window left" },
     ["sl"] = { "<C-w>l", "window right" },
     ["sj"] = { "<C-w>j", "window down" },
     ["sk"] = { "<C-w>k", "window up" },
+
     -- Opening lazy git
     ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
+
+    -- Do not yank with x
+    ["x"] = {'"_x', "Do not yank with x"},
   },
 }
 

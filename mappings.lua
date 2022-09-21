@@ -3,54 +3,59 @@
 local M = {}
 
 M.general = {
-  n = {
-    ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
+    n = {
+        ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
-    -- save
-    ["<C-s>"] = { "<cmd> w <CR>", "save file" },
+        -- save
+        ["<C-s>"] = { "<cmd> w <CR>", "save file" },
 
-    -- Copy all
-    ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
+        -- Yanking
+        ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
+        ["<C-a>"] = {"gg<S-v>G", "select all"},
+        ["YY"] = {"^y$", "Copy whole line without newline"},
+        ["<leader>y"] = {'"+y', "Copy to system clipboard"},
 
-    -- select all
-    ["<C-a>"] = {"gg<S-v>G", "select all"},
+        -- New tab
+        ["TT"] = { ":tabedit ", "Create new tab"},
 
-    -- Copy whole line without the newline
-    ["YY"] = {"^y$", "Copy whole line without newline"},
+        -- Panes
+        ["ss"] = { ":split<Return><C-w>w", "Split window horizontally"},
+        ["sv"] = { ":vsplit<Return><C-w>w", "Split window vertically"},
 
-    -- New tab
-    ["TT"] = { ":tabedit ", "Create new tab"},
+        ["W"] = {":q<Return>", "Close window"},
+        ["<A-W>"] = {":wq <CR>", "Save and close"},
 
-    -- Panes
-    ["ss"] = { ":split<Return><C-w>w", "Split window horizontally"},
-    ["sv"] = { ":vsplit<Return><C-w>w", "Split window vertically"},
+        -- Changing window focus
+        ["sh"] = { "<C-w>h", "window left" },
+        ["sl"] = { "<C-w>l", "window right" },
+        ["sj"] = { "<C-w>j", "window down" },
+        ["sk"] = { "<C-w>k", "window up" },
 
-    ["W"] = {":q<Return>", "Close window"},
-    ["<A-W>"] = {":wq <CR>", "Save and close"},
-    -- Changing window focus
-        --
-    ["sh"] = { "<C-w>h", "window left" },
-    ["sl"] = { "<C-w>l", "window right" },
-    ["sj"] = { "<C-w>j", "window down" },
-    ["sk"] = { "<C-w>k", "window up" },
+        -- Opening lazy git
+        ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
 
-    -- Opening lazy git
-    ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
+        -- Do not yank with x
+        ["x"] = {'"_x', "Do not yank with x"},
 
-    -- Do not yank with x
-    ["x"] = {'"_x', "Do not yank with x"},
-  },
+        -- Increment/Decrement
+        ["+"] = {"<C-a>", "Increment"},
+        ["-"] = {"<C-x>", "Decrement"},
+    },
+
+    v = {
+        ["<leader>y"] = {'"+y', "Copy to system clipboard"},
+    }
 }
 
 M.telescope = {
-  plugin = true,
+    plugin = true,
 
-  n = {
-    -- find
-    ["<A-r>"] = { "<cmd> Telescope find_files <CR>", "find files" },
-    ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
+    n = {
+        -- find
+        ["<A-r>"] = { "<cmd> Telescope find_files <CR>", "find files" },
+        ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
 
-    -- Diagnostics
+        -- Diagnostics
         ["<A-e>"] = {
             function()
                 require "plugins.configs.telescope"
@@ -62,9 +67,9 @@ M.telescope = {
                     line_width = 50,
                 })
             end,
-        "Show diagnostics with telescope"
+            "Show diagnostics with telescope"
         },
-  },
+    },
 }
 
 M.lspconfig = {

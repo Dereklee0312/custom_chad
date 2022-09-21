@@ -17,10 +17,12 @@ opt.softtabstop = 4
 
 opt.relativenumber = true
 
-vim.opt.wrap = false -- No wrap lines
+opt.wrap = false -- No wrap lines
+opt.backup = false
+opt.scrolloff = 10
+opt.sidescrolloff = 20
+opt.clipboard = ""
+
 vim.cmd('noswapfile')
-vim.opt.backup = false
-vim.opt.scrolloff = 10
-vim.opt.sidescrolloff = 20
 
 vim.g.lazygit_floating_window_scaling_factor = 0.95

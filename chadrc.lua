@@ -7,8 +7,8 @@ local highlights = require("custom.ui.highlights")
 -- example of changing theme:
 
 M.ui = {
-    theme = "tokyonight",
-    theme_toggle = { "doomchad", "tokyonight" },
+    theme = "doomchad",
+    theme_toggle = { "solarized_dark", "doomchad" },
     transparency = "true",
     hl_override = highlights.override,
     hl_add = highlights.add,

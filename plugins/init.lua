@@ -47,6 +47,13 @@ return {
 	},
 
     ["kdheepak/lazygit.nvim"] = {},
+
+    -- Github copilot
+    ["github/copilot.vim"] = {
+        config = function ()
+            require "custom.plugins.configs.copilot"
+        end,
+    },
 --------------------------------------------------------------------------------------
     -- Overriding configs
     ["nvim-treesitter/nvim-treesitter"] = {

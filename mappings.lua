@@ -40,6 +40,10 @@ M.general = {
         -- Increment/Decrement
         ["+"] = {"<C-a>", "Increment"},
         ["-"] = {"<C-x>", "Decrement"},
+
+        -- Disable/Enable copilot
+        ["<leader>cp"] = {":Copilot enable <CR>", "Copilot enable"},
+        ["<leader>cP"] = {":Copilot disable <CR>", "Copilot disable"},
     },
 
     v = {

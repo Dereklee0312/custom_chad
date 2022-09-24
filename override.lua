@@ -45,7 +45,7 @@ M.mason = {
 
     -- c/cpp
     "clangd",
-    "csharp-language-server",
+    "omnisharp",
 
     -- python
     "pyright",

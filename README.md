@@ -33,7 +33,7 @@ The features implemented with this configuration are:
 
 4 -> Basic understanding of Neovim
 
-5 -> Make sure that neovim version is above 0.7. Check with `nvim --version`
+5 -> Make sure that neovim version is above 0.7.2. Check with `nvim --version`
 
 6 -> Install ripgrep
 
@@ -63,6 +63,7 @@ Telescope is one of the core features of neovim in general.
 - It is responsible for file browsing. 
 - It can show a preview of the file.
 - Can search throughout the files according to words.
+- Show diagnostics
 
 To display all the keymaps that have been set in normal mode:
 > \<leader\>-tk
@@ -75,3 +76,6 @@ To open file explorer and search based on file name:
 
 To open file explorer and search based on word in the file:
 > Alt-f
+
+Open list of diagnostics:
+> Alt-e

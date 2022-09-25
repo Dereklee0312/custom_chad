@@ -34,8 +34,10 @@ M.general = {
         -- Opening lazy git
         ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
 
-        -- Do not yank with x
+        -- Do not yank with x/d
         ["x"] = {'"_x', "Do not yank with x"},
+        ["D"] = {'"_d', "Do not yank with D"},
+        ["DD"] = {'"_dd', "Do not yank with DD"},
 
         -- Increment/Decrement
         ["+"] = {"<C-a>", "Increment"},
@@ -48,6 +50,14 @@ M.general = {
 
     v = {
         ["<leader>y"] = {'"+y', "Copy to system clipboard"},
+        ["D"] = {'"_d', "Do not yank with D"},
+    },
+
+    t = {
+        ["<C-h>"] = { "<C-\\><C-n><C-w>h", "Changing focus from terminal pane to left" },
+        ["<C-l>"] = { "<C-\\><C-n><C-w>l", "Changing focus from terminal pane to right" },
+        ["<C-j>"] = { "<C-\\><C-n><C-w>j", "Changing focus from terminal pane to down" },
+        ["<C-k>"] = { "<C-\\><C-n><C-w>k", "Changing focus from terminal pane to up" },
     }
 }
 

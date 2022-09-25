@@ -5,8 +5,8 @@ M.override = {
 	markdownError = { link = "Normal" },
 	Folded = { fg = "blue", },
 	LineNr = { fg = "light_grey" },
-	CmpBorder = { fg = "orange", },
-	CmpDocBorder = { fg = "sun", },
+	CmpBorder = { fg = "#5D3FD3", },
+	CmpDocBorder = { fg = "#7F00FF", bg = "NONE" },
 	IndentBlanklineContextChar = { fg = "nord_blue" },
 	MatchWord = { bg = "black", fg = "orange", bold = true },
 

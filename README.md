@@ -79,3 +79,18 @@ To open file explorer and search based on word in the file:
 
 Open list of diagnostics:
 > Alt-e
+
+## Nvterm
+Nvterm is used to create a split/floating terminal buffer
+
+To create/toggle a vertical split:
+> Alt-v
+
+To create/toggle a horizontal buffer:
+> Alt-h
+
+To create/toggle a floating terminal:
+> Alt-i
+
+To move between buffers and terminals:
+> Ctrl-h/j/k/l

@@ -32,7 +32,7 @@ M.general = {
         ["sk"] = { "<C-w>k", "window up" },
 
         -- Opening lazy git
-        ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
+        -- ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
 
         -- Do not yank with x/d
         ["x"] = {'"_x', "Do not yank with x"},

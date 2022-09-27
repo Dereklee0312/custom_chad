@@ -46,14 +46,15 @@ return {
 		end,
 	},
 
-    ["kdheepak/lazygit.nvim"] = {},
-
     -- Github copilot
     ["github/copilot.vim"] = {
         config = function ()
             require "custom.plugins.configs.copilot"
         end,
     },
+
+    -- Startuptime
+    ["dstein64/vim-startuptime"] = {},
 --------------------------------------------------------------------------------------
     -- Overriding configs
     ["nvim-treesitter/nvim-treesitter"] = {

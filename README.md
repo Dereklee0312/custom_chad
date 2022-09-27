@@ -94,3 +94,5 @@ To create/toggle a floating terminal:
 
 To move between buffers and terminals:
 > Ctrl-h/j/k/l
+
+# TBC

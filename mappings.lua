@@ -58,6 +58,8 @@ M.general = {
         ["<C-l>"] = { "<C-\\><C-n><C-w>l", "Changing focus from terminal pane to right" },
         ["<C-j>"] = { "<C-\\><C-n><C-w>j", "Changing focus from terminal pane to down" },
         ["<C-k>"] = { "<C-\\><C-n><C-w>k", "Changing focus from terminal pane to up" },
+
+        ["<C-n>"] = { "<C-\\><C-n>", "Change to Normal mode" },
     }
 }
 

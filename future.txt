@@ -4,8 +4,6 @@ Add telescope configs: use ctrl j and k for up and down
 
 Add treesitter parsers
 
-Add dashboard
-
 Add keymaps: split screen: sv and ss
              New tabs: TT
              Telescope find file: Alt + f

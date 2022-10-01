@@ -12,13 +12,13 @@ require("indent_blankline").setup {
     space_char_blankline = " ",
     show_current_context = true,
     show_current_context_start = true,
-    vim.cmd [[highlight IndentBlanklineContextChar guifg=#ffffff gui=nocombine]],
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        "IndentBlanklineIndent6",
-    },
+    vim.cmd [[highlight IndentBlanklineContextChar guifg=#06ff5d gui=nocombine]],
+    -- char_highlight_list = {
+    --     "IndentBlanklineIndent1",
+    --     "IndentBlanklineIndent2",
+    --     "IndentBlanklineIndent3",
+    --     "IndentBlanklineIndent4",
+    --     "IndentBlanklineIndent5",
+    --     "IndentBlanklineIndent6",
+    -- },
 }

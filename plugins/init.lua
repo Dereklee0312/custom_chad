@@ -1,5 +1,4 @@
 -- custom/plugins/init.lua return table of plugins
-
 local override = require "custom.override"
 
 return {
@@ -40,6 +39,7 @@ return {
     end,
   },
 
+  -- Use local UI configs instead of NvChad's
   ["NvChad/ui"] = {
     config = function()
       require("custom.ui").setup()
@@ -56,6 +56,7 @@ return {
   -- Startuptime
   ["dstein64/vim-startuptime"] = {},
 
+  -- Formatting files
   ["jose-elias-alvarez/null-ls.nvim"] = {
     after = "nvim-lspconfig",
     config = function()
@@ -63,6 +64,7 @@ return {
     end,
   },
 
+  -- Forked repo for base46
   ["Dereklee0312/base46"] = {
     branch = "dark_horizon",
     config = function()

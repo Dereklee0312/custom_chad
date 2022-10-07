@@ -21,6 +21,7 @@ opt.backup = false
 opt.scrolloff = 10
 opt.sidescrolloff = 20
 opt.clipboard = ""
+opt.mouse = ""
 
 vim.cmd "noswapfile"
 

@@ -1,4 +1,5 @@
 -- custom/plugins/init.lua return table of plugins
+
 local override = require "custom.override"
 
 return {
@@ -39,7 +40,6 @@ return {
     end,
   },
 
-  -- Use local UI configs instead of NvChad's
   ["NvChad/ui"] = {
     config = function()
       require("custom.ui").setup()
@@ -65,16 +65,17 @@ return {
   },
 
   -- Forked repo for base46
-  ["Dereklee0312/base46"] = {
-    branch = "dark_horizon",
-    config = function()
-      local ok, base46 = pcall(require, "base46")
+  -- ["Dereklee0312/base46"] = {
+  --   -- branch = "dark_horizon",
+  --   branch = "luc_theme",
+  --   config = function()
+  --     local ok, base46 = pcall(require, "base46")
 
-      if ok then
-        base46.load_theme()
-      end
-    end,
-  },
+  --     if ok then
+  --       base46.load_theme()
+  --     end
+  --   end,
+  -- },
   --------------------------------------------------------------------------------------
   -- Overriding configs
   ["nvim-treesitter/nvim-treesitter"] = {
@@ -93,5 +94,5 @@ return {
   -- Removing plugins
   ["numToStr/Comment.nvim"] = false,
   ["folke/which-key.nvim"] = false,
-  ["NvChad/base46"] = false,
+  -- ["NvChad/base46"] = false,
 }

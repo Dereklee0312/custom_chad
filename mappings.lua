@@ -5,6 +5,7 @@ local M = {}
 M.general = {
   n = {
     ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
+        ["<leader>n"] = {"<cmd> set nu! rnu! <CR>", "Remove all line numbers"},
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },

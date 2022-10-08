@@ -113,14 +113,6 @@ M.lspconfig = {
     ["gi"] = { ":Telescope lsp_implementations <CR>", "lsp implementation" },
     ["gd"] = { ":Telescope lsp_definitions <CR>", "lsp definition" },
     ["<leader>D"] = { ":Telescope lsp_type_definitions <CR>", "lsp type definition" },
-
-    -- Formatting
-    ["<leader>fm"] = {
-      function()
-        vim.lsp.buf.formatting { async = true }
-      end,
-      "Format buffer",
-    },
   },
 }
 

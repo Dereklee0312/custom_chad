@@ -5,7 +5,9 @@ local override = require "custom.override"
 return {
   ----------------------------------------------------------------------------------------
   -- Installing new plugins
-  ["p00f/nvim-ts-rainbow"] = {},
+  ["p00f/nvim-ts-rainbow"] = {
+    after = "nvim-treesitter",
+  },
 
   -- Custom lsp config
   ["neovim/nvim-lspconfig"] = {
@@ -65,7 +67,9 @@ return {
     end,
   },
 
-  ["windwp/nvim-ts-autotag"] = {},
+  ["windwp/nvim-ts-autotag"] = {
+    after = "nvim-treesitter",
+  },
 
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {

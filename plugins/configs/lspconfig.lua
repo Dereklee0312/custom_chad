@@ -3,18 +3,18 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-    -- c/cpp
-    "clangd",
-    "csharp_ls",
+  -- c/cpp
+  "clangd",
+  "csharp_ls",
 
-    -- python
-    "pyright",
+  -- python
+  "pyright",
 
-    -- Bash
-    "bashls",
+  -- Bash
+  "bashls",
 
-    -- SQL
-    "sqls",
+  -- SQL
+  "sqls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -24,16 +24,16 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.tsserver.setup({
-		init_options = {
-			hostInfo = "neovim",
-		},
-		on_attach = on_attach,
-		capabilities = capabilities,
-        root_dir = function(fname)
-            return lspconfig.util.root_pattern '*.js'(fname)
-            or lspconfig.util.root_pattern('package.json', 'jsconfig.json', '.git')(fname)
-        end,
-	})
+lspconfig.tsserver.setup {
+  init_options = {
+    hostInfo = "neovim",
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+  root_dir = function(fname)
+    return lspconfig.util.root_pattern "*.js"(fname)
+      or lspconfig.util.root_pattern("package.json", "jsconfig.json", ".git")(fname)
+  end,
+}
 
-vim.diagnostic.config({virtual_text = false})
+vim.diagnostic.config { virtual_text = false }

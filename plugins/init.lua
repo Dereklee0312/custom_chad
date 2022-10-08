@@ -64,6 +64,8 @@ return {
     end,
   },
 
+    ["windwp/nvim-ts-autotag"] = {},
+
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   -- branch = "dark_horizon",

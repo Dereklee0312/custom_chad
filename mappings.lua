@@ -5,7 +5,7 @@ local M = {}
 M.general = {
   n = {
     ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
-        ["<leader>n"] = {"<cmd> set nu! rnu! <CR>", "Remove all line numbers"},
+    ["<leader>n"] = { "<cmd> set nu! rnu! <CR>", "Remove all line numbers" },
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },
@@ -113,6 +113,14 @@ M.lspconfig = {
     ["gi"] = { ":Telescope lsp_implementations <CR>", "lsp implementation" },
     ["gd"] = { ":Telescope lsp_definitions <CR>", "lsp definition" },
     ["<leader>D"] = { ":Telescope lsp_type_definitions <CR>", "lsp type definition" },
+
+    -- Formatting
+    ["<leader>fm"] = {
+      function()
+        vim.lsp.buf.formatting { async = true }
+      end,
+      "Format buffer",
+    },
   },
 }
 

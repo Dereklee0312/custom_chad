@@ -35,6 +35,9 @@ M.treesitter = {
     extended_mode = true,
     max_file_lines = nil,
   },
+  autotag = {
+    enable = true,
+  },
 }
 
 M.mason = {
@@ -59,7 +62,9 @@ M.mason = {
     -- javascript
     "typescript-language-server",
 
+    -- FORMATTERS
     "prettier",
+    "black",
   },
 }
 

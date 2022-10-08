@@ -35,6 +35,7 @@ return {
 
   -- Holds context of current line
   ["nvim-treesitter/nvim-treesitter-context"] = {
+    after = "nvim-treesitter",
     config = function()
       require "custom.plugins.configs.tscontext"
     end,
@@ -64,7 +65,7 @@ return {
     end,
   },
 
-    ["windwp/nvim-ts-autotag"] = {},
+  ["windwp/nvim-ts-autotag"] = {},
 
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {

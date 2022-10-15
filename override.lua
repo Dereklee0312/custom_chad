@@ -10,7 +10,7 @@ M.treesitter = {
 
   highlight = {
     enable = true,
-    -- disable = { "python" },
+    disable = { "sql" },
   },
   indent = {
     enable = true,

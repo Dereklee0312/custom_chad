@@ -72,17 +72,16 @@ return {
   },
 
   -- Forked repo for base46
-  -- ["Dereklee0312/base46"] = {
-  --   -- branch = "dark_horizon",
-  --   branch = "luc_theme",
-  --   config = function()
-  --     local ok, base46 = pcall(require, "base46")
+  ["Dereklee0312/base46"] = {
+    branch = "Ayu-Light",
+    config = function()
+      local ok, base46 = pcall(require, "base46")
 
-  --     if ok then
-  --       base46.load_theme()
-  --     end
-  --   end,
-  -- },
+      if ok then
+        base46.load_theme()
+      end
+    end,
+  },
   --------------------------------------------------------------------------------------
   -- Overriding configs
   ["nvim-treesitter/nvim-treesitter"] = {
@@ -101,5 +100,5 @@ return {
   -- Removing plugins
   ["numToStr/Comment.nvim"] = false,
   ["folke/which-key.nvim"] = false,
-  -- ["NvChad/base46"] = false,
+  ["NvChad/base46"] = false,
 }

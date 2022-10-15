@@ -8,7 +8,8 @@ local highlights = require "custom.ui.highlights"
 
 M.ui = {
   theme = "dark_horizon",
-  theme_toggle = { "solarized_dark", "gatekeeper" },
+  theme_toggle = { "solarized_dark", "dark_horizon" },
+  -- theme_toggle = { "ayu-light", "catppuccin_latte" },
   -- transparency = "true",
   hl_override = highlights.override,
   hl_add = highlights.add,

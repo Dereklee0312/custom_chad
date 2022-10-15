@@ -33,7 +33,7 @@ The features implemented with this configuration are:
 
 4 -> Basic understanding of Neovim
 
-5 -> Make sure that neovim version is above 0.7.2. Check with `nvim --version`
+5 -> Make sure that neovim version is above 0.8 Check with `nvim --version`
 
 6 -> Install ripgrep
 

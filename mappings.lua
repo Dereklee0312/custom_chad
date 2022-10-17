@@ -1,6 +1,7 @@
 -- n, v, i, t = mode names
 
 local M = {}
+Mouse = 0
 
 M.general = {
   n = {
@@ -47,6 +48,19 @@ M.general = {
     -- Disable/Enable copilot
     ["<leader>cp"] = { ":Copilot enable <CR>", "Copilot enable" },
     ["<leader>cP"] = { ":Copilot disable <CR>", "Copilot disable" },
+
+    -- Toggling between mouse modes
+    ["<leader>m"] = {
+      function()
+        if Mouse == 0 then
+          vim.opt.mouse = "a"
+          Mouse = 1
+        else
+          vim.opt.mouse = ""
+          Mouse = 0
+        end
+      end,
+    },
   },
 
   v = {

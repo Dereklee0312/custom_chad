@@ -7,10 +7,10 @@ local highlights = require "custom.ui.highlights"
 -- example of changing theme:
 
 M.ui = {
-  theme = "dark_horizon",
+  theme = "ayu-dark",
   theme_toggle = { "solarized_dark", "dark_horizon" },
   -- theme_toggle = { "ayu-light", "catppuccin_latte" },
-  -- transparency = "true",
+  transparency = "true",
   hl_override = highlights.override,
   hl_add = highlights.add,
 }

@@ -20,7 +20,7 @@ local sources = {
   -- b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
   -- Python
-  b.formatting.black.with { diagnostics_format = "#{m} [#{c}]" },
+  b.formatting.black,
 
   -- Csharp
   b.formatting.csharpier,

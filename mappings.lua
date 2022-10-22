@@ -53,10 +53,12 @@ M.general = {
     ["<leader>m"] = {
       function()
         if Mouse == 0 then
-          vim.opt.mouse = "a"
+          vim.opt.mouse = ""
+          vim.cmd "set nu! rnu!"
           Mouse = 1
         else
-          vim.opt.mouse = ""
+          vim.opt.mouse = "a"
+          vim.cmd "set nu! rnu!"
           Mouse = 0
         end
       end,

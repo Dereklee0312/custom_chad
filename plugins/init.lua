@@ -85,7 +85,11 @@ return {
 
   ["MunifTanjim/nui.nvim"] = {},
 
-  ["rcarriga/nvim-notify"] = {},
+  ["rcarriga/nvim-notify"] = {
+    config = function()
+      require "custom.plugins.configs.notify"
+    end,
+  },
 
   -- Forked repo for base46
   ["Dereklee0312/base46"] = {

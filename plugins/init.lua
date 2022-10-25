@@ -17,9 +17,6 @@ return {
     end,
   },
 
-  -- Smart comments
-  -- ["tpope/vim-commentary"] = {},
-
   -- Telescope config overwrite
   ["nvim-telescope/telescope.nvim"] = {
     config = function()
@@ -71,17 +68,36 @@ return {
     after = "nvim-treesitter",
   },
 
+  ["folke/noice.nvim"] = {
+    event = "VimEnter",
+    config = function()
+      require "custom.plugins.configs.noice"
+    end,
+    requires = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
+  },
+
+  ["MunifTanjim/nui.nvim"] = {},
+
+  ["rcarriga/nvim-notify"] = {},
+
   -- Forked repo for base46
-  -- ["Dereklee0312/base46"] = {
-  --   branch = "Ayu-Light",
-  --   config = function()
-  --     local ok, base46 = pcall(require, "base46")
-  --
-  --     if ok then
-  --       base46.load_theme()
-  --     end
-  --   end,
-  -- },
+  ["Dereklee0312/base46"] = {
+    branch = "Oceanic-Next-Light",
+    config = function()
+      local ok, base46 = pcall(require, "base46")
+
+      if ok then
+        base46.load_theme()
+      end
+    end,
+  },
   --------------------------------------------------------------------------------------
   -- Overriding configs
   ["nvim-treesitter/nvim-treesitter"] = {
@@ -99,5 +115,5 @@ return {
   --------------------------------------------------------------------------------------
   -- Removing plugins
   ["folke/which-key.nvim"] = false,
-  -- ["NvChad/base46"] = false,
+  ["NvChad/base46"] = false,
 }

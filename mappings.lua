@@ -2,6 +2,7 @@
 
 local M = {}
 Mouse = 0
+Copilot = 0
 
 M.general = {
   n = {
@@ -33,9 +34,6 @@ M.general = {
     ["sj"] = { "<C-w>j", "window down" },
     ["sk"] = { "<C-w>k", "window up" },
 
-    -- Opening lazy git
-    -- ["<leader>gg"] = {":LazyGit<CR>", "Open lazy git in neovim"},
-
     -- Do not yank with x/d
     ["x"] = { '"_x', "Do not yank with x" },
     ["D"] = { '"_d', "Do not yank with D" },
@@ -45,9 +43,20 @@ M.general = {
     ["+"] = { "<C-a>", "Increment" },
     ["-"] = { "<C-x>", "Decrement" },
 
-    -- Disable/Enable copilot
-    ["<leader>cp"] = { ":Copilot enable <CR>", "Copilot enable" },
-    ["<leader>cP"] = { ":Copilot disable <CR>", "Copilot disable" },
+    -- Toggle copilot
+    ["<leader>cp"] = {
+      function()
+        if Copilot == 0 then
+          vim.g.copilot_enabled = true
+          print "Copilot Enabled"
+          Copilot = 1
+        else
+          vim.g.copilot_enabled = false
+          print "Copilot Disabled"
+          Copilot = 0
+        end
+      end,
+    },
 
     -- Toggling between mouse modes
     ["<leader>m"] = {

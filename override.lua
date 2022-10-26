@@ -64,6 +64,7 @@ M.mason = {
 
     -- FORMATTERS
     "prettier",
+    "prettierd",
     "black",
   },
 }
@@ -117,4 +118,9 @@ M.nvterm = {
     },
   },
 }
+
+M.ui = {
+  statusline = { separator_style = "round" },
+}
+
 return M

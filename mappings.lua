@@ -111,6 +111,8 @@ M.telescope = {
       end,
       "Show diagnostics with telescope",
     },
+    -- Noice telescope
+    ["<leader>tn"] = { "<cmd> Telescope noice <CR>", "Opening noice in telescope" },
   },
 }
 

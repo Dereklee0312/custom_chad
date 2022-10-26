@@ -21,7 +21,6 @@ local options = {
         ["<CR>"] = actions.select_default + actions.center,
       },
     },
-    extensions_list = { "themes", "terms" },
   },
 }
 -- check for any override
@@ -29,8 +28,4 @@ local options = {
 telescope.setup(options)
 
 -- load extensions
-pcall(function()
-  for _, ext in ipairs(options.extensions_list) do
-    telescope.load_extension(ext)
-  end
-end)
+telescope.load_extension("noice")

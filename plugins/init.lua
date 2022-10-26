@@ -48,6 +48,7 @@ return {
 
   -- Github copilot
   ["github/copilot.vim"] = {
+    event = "InsertEnter",
     config = function()
       require "custom.plugins.configs.copilot"
     end,
@@ -92,16 +93,16 @@ return {
   },
 
   -- Forked repo for base46
-  ["Dereklee0312/base46"] = {
-    branch = "Oceanic-Next-Light",
-    config = function()
-      local ok, base46 = pcall(require, "base46")
-
-      if ok then
-        base46.load_theme()
-      end
-    end,
-  },
+  -- ["Dereklee0312/base46"] = {
+  --   branch = "Oceanic-Next-Light",
+  --   config = function()
+  --     local ok, base46 = pcall(require, "base46")
+  --
+  --     if ok then
+  --       base46.load_theme()
+  --     end
+  --   end,
+  -- },
   --------------------------------------------------------------------------------------
   -- Overriding configs
   ["nvim-treesitter/nvim-treesitter"] = {
@@ -119,5 +120,5 @@ return {
   --------------------------------------------------------------------------------------
   -- Removing plugins
   ["folke/which-key.nvim"] = false,
-  ["NvChad/base46"] = false,
+  -- ["NvChad/base46"] = false,
 }

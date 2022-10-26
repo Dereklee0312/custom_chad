@@ -5,31 +5,13 @@ local override = require "custom.override"
 return {
   ----------------------------------------------------------------------------------------
   -- Installing new plugins
+  ----------------------------------------------------------------------------------------
+  --***********************************************************************************--
+  --                                   Treesitter plugins                              --
+  --***********************************************************************************--
+  -- Rainbow brackets
   ["p00f/nvim-ts-rainbow"] = {
     after = "nvim-treesitter",
-  },
-
-  -- Custom lsp config
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.configs.lspconfig"
-    end,
-  },
-
-  -- Telescope config overwrite
-  ["nvim-telescope/telescope.nvim"] = {
-    config = function()
-      require "plugins.configs.telescope"
-      require "custom.plugins.configs.telescope"
-    end,
-  },
-
-  -- Reconfigured blankline for context highlight indenting and rainbow indents
-  ["lukas-reineke/indent-blankline.nvim"] = {
-    config = function()
-      require "custom.plugins.configs.blankline"
-    end,
   },
 
   -- Holds context of current line
@@ -40,9 +22,26 @@ return {
     end,
   },
 
-  ["NvChad/ui"] = {
+  ["windwp/nvim-ts-autotag"] = {
+    after = "nvim-treesitter",
+  },
+
+  --***********************************************************************************--
+  --                                      LSP Plugins                                  --
+  --***********************************************************************************--
+  -- Custom lsp config
+  ["neovim/nvim-lspconfig"] = {
     config = function()
-      require("custom.ui").setup()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.configs.lspconfig"
+    end,
+  },
+
+  -- Formatting files
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.configs.null-ls"
     end,
   },
 
@@ -53,22 +52,9 @@ return {
       require "custom.plugins.configs.copilot"
     end,
   },
-
-  -- Startuptime
-  ["dstein64/vim-startuptime"] = {},
-
-  -- Formatting files
-  ["jose-elias-alvarez/null-ls.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function()
-      require "custom.plugins.configs.null-ls"
-    end,
-  },
-
-  ["windwp/nvim-ts-autotag"] = {
-    after = "nvim-treesitter",
-  },
-
+  --***********************************************************************************--
+  --                                    NOTIFY plugins                                 --
+  --***********************************************************************************--
   ["folke/noice.nvim"] = {
     event = "VimEnter",
     config = function()
@@ -89,6 +75,28 @@ return {
   ["rcarriga/nvim-notify"] = {
     config = function()
       require "custom.plugins.configs.notify"
+    end,
+  },
+
+  --***********************************************************************************--
+  --                                    OTHER plugins                                  --
+  --***********************************************************************************--
+  -- Telescope config overwrite
+  ["nvim-telescope/telescope.nvim"] = {
+    config = function()
+      require "plugins.configs.telescope"
+      require "custom.plugins.configs.telescope"
+    end,
+  },
+
+  -- Startuptime
+  ["dstein64/vim-startuptime"] = {
+    event = "VimEnter",
+  },
+
+  ["NvChad/ui"] = {
+    config = function()
+      require("custom.ui").setup()
     end,
   },
 
@@ -117,6 +125,9 @@ return {
   ["NvChad/nvterm"] = {
     override_options = override.nvterm,
   },
+  -- ["NvChad/ui"] = {
+  --   override_options = override.ui,
+  -- },
   --------------------------------------------------------------------------------------
   -- Removing plugins
   ["folke/which-key.nvim"] = false,

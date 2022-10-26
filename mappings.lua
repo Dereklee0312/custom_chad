@@ -43,6 +43,13 @@ M.general = {
     ["+"] = { "<C-a>", "Increment" },
     ["-"] = { "<C-x>", "Decrement" },
 
+    -- Format
+    ["<leader>fm"] = {
+      function()
+        vim.lsp.buf.format { async = true }
+      end,
+      "lsp formatting",
+    },
     -- Toggle copilot
     ["<leader>cp"] = {
       function()

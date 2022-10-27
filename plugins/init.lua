@@ -125,9 +125,6 @@ return {
   ["NvChad/nvterm"] = {
     override_options = override.nvterm,
   },
-  -- ["NvChad/ui"] = {
-  --   override_options = override.ui,
-  -- },
   --------------------------------------------------------------------------------------
   -- Removing plugins
   ["folke/which-key.nvim"] = false,

@@ -119,8 +119,4 @@ M.nvterm = {
   },
 }
 
-M.ui = {
-  statusline = { separator_style = "round" },
-}
-
 return M

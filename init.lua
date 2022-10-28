@@ -22,4 +22,5 @@ opt.scrolloff = 10
 opt.sidescrolloff = 20
 opt.clipboard = ""
 
+opt.cmdheight = 0
 vim.cmd("noswapfile")

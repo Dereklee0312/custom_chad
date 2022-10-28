@@ -107,7 +107,7 @@ noice.setup {
     routes = {
       {
         view = "notify",
-        filter = { event = "msg_showmode" },
+        -- filter = { event = "msg_showmode" },
       },
     },
   }, --- @see section on routes

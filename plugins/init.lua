@@ -59,23 +59,23 @@ return {
   --***********************************************************************************--
   --                                    NOTIFY plugins                                 --
   --***********************************************************************************--
-  ["folke/noice.nvim"] = {
-    event = "VimEnter",
-    config = function()
-      require "custom.plugins.configs.noice"
-    end,
-  },
-
-  ["MunifTanjim/nui.nvim"] = {
-    after = "noice.nvim",
-  },
-
-  ["rcarriga/nvim-notify"] = {
-    after = "noice.nvim",
-    config = function()
-      require "custom.plugins.configs.notify"
-    end,
-  },
+  -- ["folke/noice.nvim"] = {
+  --   event = "VimEnter",
+  --   config = function()
+  --     require "custom.plugins.configs.noice1"
+  --   end,
+  -- },
+  --
+  -- ["MunifTanjim/nui.nvim"] = {
+  --   after = "noice.nvim",
+  -- },
+  --
+  -- ["rcarriga/nvim-notify"] = {
+  --   after = "noice.nvim",
+  --   config = function()
+  --     require "custom.plugins.configs.notify"
+  --   end,
+  -- },
 
   --***********************************************************************************--
   --                                    OTHER plugins                                  --

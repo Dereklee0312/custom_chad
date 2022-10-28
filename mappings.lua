@@ -25,7 +25,7 @@ M.general = {
     ["ss"] = { ":split<Return><C-w>w", "Split window horizontally" },
     ["sv"] = { ":vsplit<Return><C-w>w", "Split window vertically" },
 
-    ["W"] = { ":q<Return>", "Close window" },
+    ["W"] = { ":q<CR><CR>", "Close window" },
     ["<A-W>"] = { ":wq <CR>", "Save and close" },
 
     -- Changing window focus

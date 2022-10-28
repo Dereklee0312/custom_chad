@@ -28,4 +28,4 @@ local options = {
 telescope.setup(options)
 
 -- load extensions
-telescope.load_extension("noice")
+-- telescope.load_extension("noice")

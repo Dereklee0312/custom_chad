@@ -15,6 +15,9 @@ local servers = {
 
   -- SQL
   "sqls",
+
+  -- HTML
+  "html",
 }
 
 for _, lsp in ipairs(servers) do

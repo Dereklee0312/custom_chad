@@ -48,7 +48,7 @@ M.mason = {
 
     -- c/cpp
     "clangd",
-    "omnisharp",
+    "csharp-language-server",
 
     -- python
     "pyright",
@@ -56,11 +56,9 @@ M.mason = {
     -- Bash
     "bash-language-server",
 
-    -- sql
-    "sqls",
-
     -- javascript
     "typescript-language-server",
+    "html-lsp",
 
     -- FORMATTERS
     "prettier",

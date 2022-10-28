@@ -31,6 +31,10 @@ return {
   --***********************************************************************************--
   -- Custom lsp config
   ["neovim/nvim-lspconfig"] = {
+    opt = true,
+    setup = function()
+      require("core.lazy_load").on_file_open "nvim-lspconfig"
+    end,
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.configs.lspconfig"
@@ -60,19 +64,14 @@ return {
     config = function()
       require "custom.plugins.configs.noice"
     end,
-    requires = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
-    },
   },
 
-  ["MunifTanjim/nui.nvim"] = {},
+  ["MunifTanjim/nui.nvim"] = {
+    after = "noice.nvim",
+  },
 
   ["rcarriga/nvim-notify"] = {
+    after = "noice.nvim",
     config = function()
       require "custom.plugins.configs.notify"
     end,
@@ -91,7 +90,8 @@ return {
 
   -- Startuptime
   ["dstein64/vim-startuptime"] = {
-    event = "VimEnter",
+    cmd = "StartupTime",
+    -- event = "VimEnter",
   },
 
   ["NvChad/ui"] = {

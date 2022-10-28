@@ -3,6 +3,9 @@
 -- you can even override default options here (core/options.lua)
 
 local opt = vim.opt
+local autocmd = vim.api.nvim_create_autocmd
+
+CMDHEIGHT = 0
 
 opt.undofile = false
 
@@ -23,4 +26,17 @@ opt.sidescrolloff = 20
 opt.clipboard = ""
 
 opt.cmdheight = 0
-vim.cmd("noswapfile")
+
+autocmd({ "RecordingEnter", "RecordingLeave", "CmdlineEnter", "CmdlineLeave" }, {
+  callback = function()
+    if CMDHEIGHT == 0 then
+      opt.cmdheight = 1
+      CMDHEIGHT = 1
+    else
+      opt.cmdheight = 0
+      CMDHEIGHT = 0
+    end
+  end,
+})
+
+vim.cmd "noswapfile"

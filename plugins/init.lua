@@ -100,6 +100,13 @@ return {
     end,
   },
 
+  ["iamcco/markdown-preview.nvim"] = {
+    run = "cd app && npm install",
+    setup = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   branch = "Oceanic-Next-Light",

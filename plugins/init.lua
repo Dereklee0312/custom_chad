@@ -107,9 +107,10 @@ return {
     end,
     ft = { "markdown" },
   },
+
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
-  --   branch = "Oceanic-Next-Light",
+  --   branch = "Nightfly",
   --   config = function()
   --     local ok, base46 = pcall(require, "base46")
   --

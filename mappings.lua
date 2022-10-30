@@ -71,10 +71,14 @@ M.general = {
         if Mouse == 0 then
           vim.opt.mouse = ""
           vim.cmd "set nu! rnu!"
+          vim.cmd "Gitsigns toggle_signs"
+          vim.diagnostic.config { signs = false }
           Mouse = 1
         else
           vim.opt.mouse = "a"
           vim.cmd "set nu! rnu!"
+          vim.cmd "Gitsigns toggle_signs"
+          vim.diagnostic.config { signs = true }
           Mouse = 0
         end
       end,

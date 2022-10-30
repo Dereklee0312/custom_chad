@@ -22,11 +22,11 @@ M.general = {
     ["TT"] = { ":tabedit ", "Create new tab" },
 
     -- Panes
-    ["ss"] = { ":split<Return><C-w>w", "Split window horizontally" },
-    ["sv"] = { ":vsplit<Return><C-w>w", "Split window vertically" },
+    ["ss"] = { "<cmd> split<Return><C-w>w", "Split window horizontally" },
+    ["sv"] = { "<cmd> vsplit<Return><C-w>w", "Split window vertically" },
 
-    ["W"] = { ":q<CR><CR>", "Close window" },
-    ["<A-W>"] = { ":wq <CR>", "Save and close" },
+    ["W"] = { "<cmd> q<CR>", "Close window" },
+    ["<A-W>"] = { "<cmd> wq <CR>", "Save and close" },
 
     -- Changing window focus
     ["sh"] = { "<C-w>h", "window left" },
@@ -123,7 +123,7 @@ M.telescope = {
       "Show diagnostics with telescope",
     },
     -- Noice telescope
-    ["<leader>tn"] = { "<cmd> Telescope noice <CR>", "Opening noice in telescope" },
+    -- ["<leader>tn"] = { "<cmd> Telescope noice <CR>", "Opening noice in telescope" },
   },
 }
 
@@ -147,10 +147,10 @@ M.lspconfig = {
     },
 
     -- JUMPING
-    ["gr"] = { ":Telescope lsp_references <CR>", "lsp references" },
-    ["gi"] = { ":Telescope lsp_implementations <CR>", "lsp implementation" },
-    ["gd"] = { ":Telescope lsp_definitions <CR>", "lsp definition" },
-    ["<leader>D"] = { ":Telescope lsp_type_definitions <CR>", "lsp type definition" },
+    ["gr"] = { "<cmd> Telescope lsp_references <CR>", "lsp references" },
+    ["gi"] = { "<cmd> Telescope lsp_implementations <CR>", "lsp implementation" },
+    ["gd"] = { "<cmd> Telescope lsp_definitions <CR>", "lsp definition" },
+    ["<leader>D"] = { "<cmd> Telescope lsp_type_definitions <CR>", "lsp type definition" },
   },
 }
 

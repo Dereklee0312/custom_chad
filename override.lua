@@ -80,12 +80,14 @@ M.ntree = {
     },
   },
   git = {
-    ignore = false,
+    enable = true,
+    show_on_dirs = false,
   },
   renderer = {
-    highlight_git = true,
     icons = {
-      show = { git = true },
+      show = {
+        git = true,
+      },
     },
   },
   view = {

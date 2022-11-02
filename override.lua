@@ -60,6 +60,9 @@ M.mason = {
     "typescript-language-server",
     "html-lsp",
 
+    -- markdown
+    "grammarly-languageserver",
+
     -- FORMATTERS
     "prettier",
     "prettierd",

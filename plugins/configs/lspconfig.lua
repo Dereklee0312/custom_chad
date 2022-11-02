@@ -18,6 +18,9 @@ local servers = {
 
   -- HTML
   "html",
+
+  -- Markdown
+  "grammarly",
 }
 
 for _, lsp in ipairs(servers) do

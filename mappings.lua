@@ -3,11 +3,23 @@
 local M = {}
 Mouse = 0
 Copilot = 0
+Wrap = 0
 
 M.general = {
   n = {
     ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
     ["<leader>n"] = { "<cmd> set nu! rnu! <CR>", "Remove all line numbers" },
+    ["<leader>w"] = {
+      function()
+        if Wrap == 0 then
+          vim.opt.wrap = true
+          Wrap = 1
+        else
+          vim.opt.wrap = false
+          Wrap = 0
+        end
+      end,
+    },
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },

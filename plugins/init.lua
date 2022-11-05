@@ -108,6 +108,13 @@ return {
     ft = { "markdown" },
   },
 
+  ["kylechui/nvim-surround"] = {
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup()
+    end,
+  },
+
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   branch = "Nightfly",

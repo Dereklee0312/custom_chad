@@ -1,0 +1,14 @@
+{
+  "AuthorDeets": {
+    "prefix": "author",
+    "body": [
+      "Name: Derek Lee",
+      "Student ID: 20820343",
+      "Module: ${0:Module}",
+      "Start Date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "End Date: ",
+      "\n"
+    ],
+    "description": "File header"
+  }
+}

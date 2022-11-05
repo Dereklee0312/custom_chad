@@ -1,0 +1,8 @@
+{
+  "doctype": {
+    "prefix": "doctype",
+    "body": ["<!DOCTYPE html>", "$1"],
+    "description": "GOOD HTML - Defines the document type",
+    "scope": "text.html"
+  }
+}

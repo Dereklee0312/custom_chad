@@ -58,7 +58,7 @@ M.mason = {
 
     -- javascript
     "typescript-language-server",
-    "html-lsp",
+    "emmet-ls",
 
     -- markdown
     "grammarly-languageserver",

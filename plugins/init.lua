@@ -83,8 +83,7 @@ return {
   -- Telescope config overwrite
   ["nvim-telescope/telescope.nvim"] = {
     config = function()
-      require "plugins.configs.telescope"
-      require "custom.plugins.configs.telescope"
+      require "custom.plugins.configs.Telescope"
     end,
   },
 

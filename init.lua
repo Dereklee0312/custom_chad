@@ -32,9 +32,7 @@ opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 -- Tab stuff
-opt.expandtab = true
 opt.shiftwidth = 4
-opt.smartindent = true
 opt.autoindent = true
 opt.smarttab = true
 opt.tabstop = 4
@@ -42,7 +40,6 @@ opt.softtabstop = 4
 
 -- Line numbers
 opt.relativenumber = true
-opt.signcolumn = "yes"
 
 -- Buffer stuff
 opt.wrap = false -- No wrap lines

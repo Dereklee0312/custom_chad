@@ -1,9 +1,9 @@
 -- n, v, i, t = mode names
 
 local M = {}
-Mouse = 0
-Copilot = 0
-Wrap = 0
+vim.g.Mouse = 0
+vim.g.Copilot = 0
+vim.g.Wrap = 0
 
 M.general = {
   n = {
@@ -11,12 +11,12 @@ M.general = {
     ["<leader>n"] = { "<cmd> set nu! rnu! <CR>", "Remove all line numbers" },
     ["<leader>w"] = {
       function()
-        if Wrap == 0 then
+        if vim.g.Wrap == 0 then
           vim.opt.wrap = true
-          Wrap = 1
+          vim.g.Wrap = 1
         else
           vim.opt.wrap = false
-          Wrap = 0
+          vim.g.Wrap = 0
         end
       end,
     },
@@ -65,14 +65,14 @@ M.general = {
     -- Toggle copilot
     ["<leader>cp"] = {
       function()
-        if Copilot == 0 then
+        if vim.g.Copilot == 0 then
           vim.g.copilot_enabled = true
           print "Copilot Enabled"
-          Copilot = 1
+          vim.g.Copilot = 1
         else
           vim.g.copilot_enabled = false
           print "Copilot Disabled"
-          Copilot = 0
+          vim.g.Copilot = 0
         end
       end,
     },
@@ -80,18 +80,18 @@ M.general = {
     -- Toggling between mouse modes
     ["<leader>m"] = {
       function()
-        if Mouse == 0 then
+        if vim.g.Mouse == 0 then
           vim.opt.mouse = ""
           vim.cmd "set nu! rnu!"
           vim.cmd "Gitsigns toggle_signs"
           vim.diagnostic.config { signs = false }
-          Mouse = 1
+          vim.g.Mouse = 1
         else
           vim.opt.mouse = "a"
           vim.cmd "set nu! rnu!"
           vim.cmd "Gitsigns toggle_signs"
           vim.diagnostic.config { signs = true }
-          Mouse = 0
+          vim.g.Mouse = 0
         end
       end,
     },

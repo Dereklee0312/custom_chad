@@ -67,6 +67,7 @@ M.mason = {
     "prettier",
     "prettierd",
     "black",
+    "csharpier",
   },
 }
 

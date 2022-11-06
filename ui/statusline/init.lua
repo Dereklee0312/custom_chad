@@ -13,7 +13,6 @@ return {
 			modules.lsp_clients(),
 			modules.session_status(),
 			modules.position(),
-			modules.invi_sep,
 		})
 	end
 }

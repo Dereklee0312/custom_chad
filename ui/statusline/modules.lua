@@ -119,23 +119,39 @@ M.lsp_clients = function()
 			or "%#StLSPClient#  LSP "
 end
 
-M.position = function()
-	if fn.expand("%") == "" then
-		return ""
-	end
-	local left_sep = "%#StPositionSep#"
-	local right_sep = "%#StPositionSep#"
-	local line, col = unpack(api.nvim_win_get_cursor(0))
-	local line_text = api.nvim_get_current_line()
-	-- Get the text before the cursor in the current line
-	local before_cursor = line_text:sub(1, col)
-	-- Replace tabs with the equivalent amount of spaces according to the value of 'tabstop'
-	before_cursor = before_cursor:gsub("\t", string.rep(" ", vim.bo.tabstop))
-	-- Turn col from byteindex to column number and make it start from 1
-	col = vim.str_utfindex(before_cursor) + 1
+-- M.position = function()
+-- 	if fn.expand("%") == "" then
+-- 		return ""
+-- 	end
+-- 	local left_sep = "%#StPositionSep#"
+-- 	local right_sep = "%#StPositionSep#"
+-- 	local line, col = unpack(api.nvim_win_get_cursor(0))
+-- 	local line_text = api.nvim_get_current_line()
+-- 	-- Get the text before the cursor in the current line
+-- 	local before_cursor = line_text:sub(1, col)
+-- 	-- Replace tabs with the equivalent amount of spaces according to the value of 'tabstop'
+-- 	before_cursor = before_cursor:gsub("\t", string.rep(" ", vim.bo.tabstop))
+-- 	-- Turn col from byteindex to column number and make it start from 1
+-- 	col = vim.str_utfindex(before_cursor) + 1
+--
+-- 	local cursor_position = "%#StPosition#" .. string.format("%-3d:%3d", line, col)
+-- 	return left_sep .. cursor_position .. right_sep
+-- end
 
-	local cursor_position = "%#StPosition#" .. string.format("%-3d:%3d", line, col)
-	return left_sep .. cursor_position .. right_sep
+M.position = function()
+  local left_sep = "%#StPositionSep#"
+  local right_sep = "%#StPositionSep#"
+  local line, col = unpack(api.nvim_win_get_cursor(0))
+  local line_text = api.nvim_get_current_line()
+  -- Get the text before the cursor in the current line
+  local before_cursor = line_text:sub(1, col)
+  -- Replace tabs with the equivalent amount of spaces according to the value of 'tabstop'
+  before_cursor = before_cursor:gsub("\t", string.rep(" ", vim.bo.tabstop))
+  -- Turn col from byteindex to column number and make it start from 1
+  col = vim.str_utfindex(before_cursor) + 1
+
+  local cursor_position = "%#StPosition#" .. string.format("%-3d:%3d", line, col)
+  return left_sep .. cursor_position .. right_sep
 end
 
 return M

@@ -90,7 +90,6 @@ return {
   -- Startuptime
   ["dstein64/vim-startuptime"] = {
     cmd = "StartupTime",
-    -- event = "VimEnter",
   },
 
   ["NvChad/ui"] = {

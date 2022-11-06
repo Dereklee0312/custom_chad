@@ -3,14 +3,13 @@
 local M = {}
 
 local highlights = require "custom.ui.highlights"
-local themes = require "changedThemes"
+local themes = require "custom.changedThemes"
 -- make sure you maintain the structure of `core/default_config.lua` here,
 -- example of changing theme:
 
 M.ui = {
   theme = "tokyonight",
   theme_toggle = { "tokyonight", "dark_horizon" },
-  -- theme_toggle = { "ayu-dark", "oceanic-next-light" },
   transparency = "true",
   hl_override = highlights.override,
   hl_add = highlights.add,

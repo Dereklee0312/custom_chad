@@ -34,8 +34,8 @@ M.general = {
     ["TT"] = { ":tabedit ", "Create new tab" },
 
     -- Panes
-    ["ss"] = { "<cmd> split<Return><C-w>w", "Split window horizontally" },
-    ["sv"] = { "<cmd> vsplit<Return><C-w>w", "Split window vertically" },
+    ["ss"] = { "<cmd> split<Return><C-w>j", "Split window horizontally" },
+    ["sv"] = { "<cmd> vsplit<Return><C-w>l", "Split window vertically" },
 
     ["W"] = { "<cmd> q<CR>", "Close window" },
     ["<A-W>"] = { "<cmd> wq <CR>", "Save and close" },

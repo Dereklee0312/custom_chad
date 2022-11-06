@@ -88,6 +88,7 @@ M.ntree = {
     show_on_dirs = false,
   },
   renderer = {
+    highlight_opened_files = "all",
     icons = {
       show = {
         git = true,

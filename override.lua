@@ -85,6 +85,7 @@ M.ntree = {
   },
   git = {
     enable = true,
+    ignore = false,
     show_on_dirs = false,
   },
   renderer = {

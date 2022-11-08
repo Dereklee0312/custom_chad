@@ -80,6 +80,10 @@ return {
   --***********************************************************************************--
   --                                    OTHER plugins                                  --
   --***********************************************************************************--
+  -- Enabling whichkey
+  ["folke/which-key.nvim"] = {
+    disable = false,
+  },
   -- Telescope config overwrite
   ["nvim-telescope/telescope.nvim"] = {
     config = function()
@@ -141,6 +145,6 @@ return {
   },
   --------------------------------------------------------------------------------------
   -- Removing plugins
-  ["folke/which-key.nvim"] = false,
+  -- ["folke/which-key.nvim"] = false,
   -- ["NvChad/base46"] = false,
 }

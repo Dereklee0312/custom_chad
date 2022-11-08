@@ -9,7 +9,7 @@ M.general = {
   n = {
     ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
     ["<leader>n"] = { "<cmd> set nu! rnu! <CR>", "Remove all line numbers" },
-    ["<leader>w"] = {
+    ["<leader>ww"] = {
       function()
         if vim.g.Wrap == 0 then
           vim.opt.wrap = true
@@ -19,6 +19,7 @@ M.general = {
           vim.g.Wrap = 0
         end
       end,
+      "Toggling Wrapping",
     },
 
     -- save
@@ -75,6 +76,7 @@ M.general = {
           vim.g.Copilot = 0
         end
       end,
+      "Toggle Copilot on and off",
     },
 
     -- Toggling between mouse modes
@@ -94,6 +96,7 @@ M.general = {
           vim.g.Mouse = 0
         end
       end,
+      "Remove all line numbers, and signs and disable mouse to copy",
     },
   },
 

@@ -1,6 +1,6 @@
 -- custom/plugins/init.lua return table of plugins
 
-local override = require "custom.override"
+local override = require "custom.plugins.configs.override"
 
 return {
   ----------------------------------------------------------------------------------------

@@ -2,25 +2,14 @@
 -- load your options globals, autocmds here or anything .__.
 -- you can even override default options here (core/options.lua)
 
+require("custom.autocmd")
+
 local opt = vim.opt
-local autocmd = vim.api.nvim_create_autocmd
 
 -- Toggle cmd height when writing a command
-CMDHEIGHT = 0
+vim.g.CMDHEIGHT = 0
 
 opt.cmdheight = 0
-
-autocmd({ "RecordingEnter", "RecordingLeave", "CmdlineEnter", "CmdlineLeave" }, {
-  callback = function()
-    if CMDHEIGHT == 0 then
-      opt.cmdheight = 1
-      CMDHEIGHT = 1
-    else
-      opt.cmdheight = 0
-      CMDHEIGHT = 0
-    end
-  end,
-})
 
 -- File stuff
 opt.undofile = false

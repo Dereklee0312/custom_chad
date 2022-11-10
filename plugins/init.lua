@@ -145,6 +145,5 @@ return {
   },
   --------------------------------------------------------------------------------------
   -- Removing plugins
-  -- ["folke/which-key.nvim"] = false,
   -- ["NvChad/base46"] = false,
 }

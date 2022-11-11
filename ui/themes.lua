@@ -13,6 +13,11 @@ M = {
       statusline_bg = "NONE",
     },
   },
+  onedark = {
+    base_16 = {
+      base0F = "red",
+    },
+  },
 }
 
 return M

@@ -18,10 +18,10 @@ autocmd({ "RecordingEnter", "RecordingLeave", "CmdlineEnter", "CmdlineLeave" }, 
 })
 
 ---Highlight yanked text
-au('TextYankPost', {
-  group = ag('yank_highlight', {}),
-  pattern = '*',
+au("TextYankPost", {
+  group = ag("yank_highlight", {}),
+  pattern = "*",
   callback = function()
-    vim.highlight.on_yank { higroup='IncSearch', timeout=300 }
+    vim.highlight.on_yank { higroup = "IncSearch", timeout = 300 }
   end,
 })

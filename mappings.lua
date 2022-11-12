@@ -63,6 +63,7 @@ M.general = {
       end,
       "lsp formatting",
     },
+
     -- Toggle copilot
     ["<leader>cp"] = {
       function()
@@ -121,6 +122,7 @@ M.telescope = {
   n = {
     -- find
     ["<A-r>"] = { "<cmd> Telescope find_files <CR>", "find files" },
+
     ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
 
     -- Diagnostics
@@ -151,6 +153,55 @@ M.lspconfig = {
         vim.diagnostic.config { virtual_text = true }
       end,
       "Show in-line diagnostics",
+    },
+
+    ["<leader>f"] = {
+      function()
+        vim.diagnostic.open_float {
+          focusable = true,
+          scope = "line",
+          style = "minimal",
+          border = "rounded",
+          source = "always",
+          header = "",
+          prefix = "",
+        }
+      end,
+      "floating diagnostic",
+    },
+
+    ["[d"] = {
+      function()
+        vim.diagnostic.goto_prev {
+          float = {
+            focusable = true,
+            scope = "line",
+            style = "minimal",
+            border = "rounded",
+            source = "always",
+            header = "",
+            prefix = "",
+          },
+        }
+      end,
+      "goto prev",
+    },
+
+    ["d]"] = {
+      function()
+        vim.diagnostic.goto_next {
+          float = {
+            focusable = true,
+            scope = "line",
+            style = "minimal",
+            border = "rounded",
+            source = "always",
+            header = "",
+            prefix = "",
+          },
+        }
+      end,
+      "goto_next",
     },
 
     -- JUMPING

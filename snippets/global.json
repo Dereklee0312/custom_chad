@@ -10,5 +10,15 @@
       "\n"
     ],
     "description": "File header"
+  },
+  "LeetDeets": {
+    "prefix": "leet",
+    "body": [
+      "Author: Derek Lee",
+      "Start Date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "End Date: ",
+      "Link: ${0:Link}",
+      "\n"
+    ]
   }
 }

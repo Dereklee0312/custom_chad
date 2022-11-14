@@ -13,6 +13,7 @@ require("base46").load_highlight "telescope"
 
 local options = {
   defaults = {
+    initial_mode = "normal",
     mappings = {
       i = {
         ["<C-j>"] = actions.move_selection_next,
@@ -21,6 +22,11 @@ local options = {
         ["<esc>"] = actions.close,
         ["<CR>"] = actions.select_default + actions.center,
       },
+    },
+  },
+  pickers = {
+    live_grep = {
+      initial_mode = "insert",
     },
   },
 }

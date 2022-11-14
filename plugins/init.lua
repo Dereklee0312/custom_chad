@@ -143,6 +143,9 @@ return {
   ["NvChad/nvterm"] = {
     override_options = override.nvterm,
   },
+  ["NvChad/nvim-colorizer.lua"] = {
+    override_options = override.colorizer,
+  },
   --------------------------------------------------------------------------------------
   -- Removing plugins
   -- ["NvChad/base46"] = false,

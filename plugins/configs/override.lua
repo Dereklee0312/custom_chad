@@ -125,4 +125,10 @@ M.nvterm = {
   },
 }
 
+M.colorizer = {
+  user_default_options = {
+    css = true,
+  },
+}
+
 return M

@@ -16,8 +16,9 @@ local servers = {
   -- SQL
   "sqls",
 
-  -- HTML
+  -- HTML & CSS
   "emmet_ls",
+  "cssls",
 
   -- Markdown
   "grammarly",

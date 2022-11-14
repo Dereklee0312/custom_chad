@@ -56,9 +56,10 @@ M.mason = {
     -- Bash
     "bash-language-server",
 
-    -- javascript
+    -- Webdev
     "typescript-language-server",
     "emmet-ls",
+    "css-lsp",
 
     -- markdown
     "grammarly-languageserver",

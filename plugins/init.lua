@@ -125,6 +125,17 @@ return {
     end,
   },
 
+  ["max397574/colortils.nvim"] = {
+    cmd = "Colortils",
+    config = function()
+      require("colortils").setup {
+        register = '"',
+      }
+    end,
+    setup = function()
+      require("core.utils").load_mappings "colortils"
+    end,
+  },
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   branch = "Nightfly",

@@ -1,4 +1,5 @@
 local actions = require "telescope.actions"
+local fb_actions = require("telescope").extensions.file_browser.actions
 -- local builtin = require('telescope.builtin')
 local present, telescope = pcall(require, "telescope")
 
@@ -28,4 +29,4 @@ local options = {
 telescope.setup(options)
 
 -- load extensions
--- telescope.load_extension("noice")
+telescope.load_extension "file_browser"

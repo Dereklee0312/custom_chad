@@ -121,9 +121,12 @@ M.telescope = {
 
   n = {
     -- find
-    ["<A-r>"] = { "<cmd> Telescope find_files <CR>", "find files" },
+    ["<A-R>"] = { "<cmd> Telescope find_files <CR>", "find files" },
 
     ["<A-f>"] = { "<cmd> Telescope live_grep <CR>", "live grep" },
+
+    -- File browser
+    ["<A-r>"] = { "<cmd> Telescope file_browser <CR>", "File browser" },
 
     -- Diagnostics
     ["<A-e>"] = { "<cmd> Telescope diagnostics <CR>", "Diagnostics with telescope" },

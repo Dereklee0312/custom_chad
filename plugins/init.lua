@@ -86,9 +86,16 @@ return {
   },
   -- Telescope config overwrite
   ["nvim-telescope/telescope.nvim"] = {
+    cmd = "Telescope",
     config = function()
-      require "custom.plugins.configs.Telescope"
+      require "plugins.configs.telescope"
+      require "custom.plugins.configs.telescope"
     end,
+  },
+
+  -- Telescope file browser extension
+  ["nvim-telescope/telescope-file-browser.nvim"] = {
+    cmd = "Telescope",
   },
 
   -- Startuptime

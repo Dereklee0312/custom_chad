@@ -65,7 +65,7 @@ M.general = {
     },
 
     -- Toggle copilot
-    ["<leader>cp"] = {
+    ["<leader>gg"] = {
       function()
         if vim.g.Copilot == 0 then
           vim.g.copilot_enabled = true
@@ -212,6 +212,18 @@ M.lspconfig = {
     ["gi"] = { "<cmd> Telescope lsp_implementations <CR>", "lsp implementation" },
     ["gd"] = { "<cmd> Telescope lsp_definitions <CR>", "lsp definition" },
     ["<leader>D"] = { "<cmd> Telescope lsp_type_definitions <CR>", "lsp type definition" },
+  },
+}
+
+M.colortils = {
+  plugin = true,
+  n = {
+    -- Colortils
+    ["<leader>cp"] = { "<cmd> Colortils picker <CR>", "Open colortils picker" },
+    ["<leader>cd"] = { "<cmd> Colortils darken <CR>", "Open colortils darken" },
+    ["<leader>cl"] = { "<cmd> Colortils lighten <CR>", "Open colortils lighten" },
+    ["<leader>cg"] = { "<cmd> Colortils gradient <CR>", "Open colortils gradient" },
+    ["<leader>cG"] = { "<cmd> Colortils greyscale <CR>", "Open colortils grayscale" },
   },
 }
 

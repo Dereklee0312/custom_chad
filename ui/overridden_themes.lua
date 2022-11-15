@@ -13,11 +13,6 @@ M.Change_theme = {
       statusline_bg = "NONE",
     },
   },
-  onedark = {
-    base_16 = {
-      base0F = "darker_black",
-    },
-  },
 }
 
 return M

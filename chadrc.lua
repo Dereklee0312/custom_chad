@@ -4,7 +4,6 @@ local M = {}
 
 local highlights = require "custom.ui.highlights"
 local themes = require "custom.ui.overridden_themes"
--- make sure you maintain the structure of `core/default_config.lua` here,
 -- example of changing theme:
 
 M.ui = {

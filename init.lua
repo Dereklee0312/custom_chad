@@ -37,4 +37,4 @@ opt.scrolloff = 10
 opt.sidescrolloff = 20
 opt.clipboard = ""
 
-vim.g.luasnippets_path = "~/.config/nvim/lua/custom/snippets"
+vim.g.luasnippets_path = "C:/Users/derek/AppData/Local/nvim/lua/custom/snippets"

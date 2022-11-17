@@ -41,6 +41,7 @@ M.treesitter = {
 }
 
 M.mason = {
+  PATH = "prepend",
   ensure_installed = {
     -- lua stuff
     "lua-language-server",

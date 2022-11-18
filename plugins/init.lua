@@ -136,6 +136,14 @@ return {
       require("core.utils").load_mappings "colortils"
     end,
   },
+
+  ["abecodes/tabout.nvim"] = {
+    config = function()
+      require "custom.plugins.configs.tabout"
+    end,
+    wants = { "nvim-treesitter" },
+    after = { "nvim-cmp" },
+  },
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   branch = "Nightfly",

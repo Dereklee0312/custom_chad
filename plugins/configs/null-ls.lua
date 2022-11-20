@@ -5,7 +5,7 @@ if not present then
 end
 
 local b = null_ls.builtins
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+-- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local sources = {
 

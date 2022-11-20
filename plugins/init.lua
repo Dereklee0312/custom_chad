@@ -144,6 +144,14 @@ return {
     wants = { "nvim-treesitter" },
     after = { "nvim-cmp" },
   },
+
+  ["akinsho/git-conflict.nvim"] = {
+    event = "VimEnter",
+    tag = "*",
+    config = function()
+      require("git-conflict").setup()
+    end,
+  },
   -- Forked repo for base46
   -- ["Dereklee0312/base46"] = {
   --   branch = "Nightfly",

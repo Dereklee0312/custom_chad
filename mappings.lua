@@ -99,6 +99,9 @@ M.general = {
       end,
       "Remove all line numbers, and signs and disable mouse to copy",
     },
+    -- Move line in normal mode
+    ["<A-j>"] = { ":m .+1<CR>==", opts = { noremap = true, silent = true } },
+    ["<A-k>"] = { ":m .-2<CR>==", opts = { noremap = true, silent = true } },
   },
 
   v = {
@@ -113,6 +116,12 @@ M.general = {
     ["<C-k>"] = { "<C-\\><C-n><C-w>k", "Changing focus from terminal pane to up" },
 
     ["<C-n>"] = { "<C-\\><C-n>", "Change to Normal mode" },
+  },
+
+  x = {
+    -- Move line in visual mode
+    ["J"] = { ":move '>+1<CR>gv-gv", opts = { silent = true, noremap = true } },
+    ["K"] = { ":move '<-2<CR>gv-gv", opts = { silent = true, noremap = true } },
   },
 }
 

@@ -11,8 +11,8 @@ local sources = {
 
   -- webdev stuff
   -- b.formatting.deno_fmt,
-  b.formatting.prettier,
-  b.formatting.prettierd,
+  -- b.formatting.prettier,
+  -- b.formatting.prettierd,
 
   -- Lua
   b.formatting.stylua,
@@ -22,7 +22,7 @@ local sources = {
   -- b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
   -- Python
-  b.formatting.black,
+  -- b.formatting.black,
 
   -- Csharp
   b.formatting.csharpier,

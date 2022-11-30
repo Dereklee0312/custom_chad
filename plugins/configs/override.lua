@@ -48,27 +48,9 @@ M.mason = {
     "stylua",
 
     -- c/cpp
-    "clangd",
     "csharp-language-server",
 
-    -- python
-    "pyright",
-
-    -- Bash
-    "bash-language-server",
-
-    -- Webdev
-    "typescript-language-server",
-    "emmet-ls",
-    "css-lsp",
-
-    -- markdown
-    "grammarly-languageserver",
-
     -- FORMATTERS
-    "prettier",
-    "prettierd",
-    "black",
     "csharpier",
   },
 }

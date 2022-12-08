@@ -20,5 +20,18 @@
       "Link: ${0:Link}",
       "\n"
     ]
+  },
+  "AOCHeader": {
+    "prefix": "Ahead",
+    "body": [
+      "---",
+      "Title: Day ${1:Day} of Advent of Code",
+      "Date: ${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}",
+      "Language: ${2:Language}",
+      "---",
+      "\n",
+      "# Part 1",
+      "\n"
+    ]
   }
 }

@@ -180,6 +180,9 @@ return {
   ["NvChad/nvim-colorizer.lua"] = {
     override_options = override.colorizer,
   },
+  ["lukas-reineke/indent-blankline.nvim"] = {
+    override_options = override.blank,
+  },
   --------------------------------------------------------------------------------------
   -- Removing plugins
   -- ["NvChad/base46"] = false,

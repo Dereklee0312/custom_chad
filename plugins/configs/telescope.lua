@@ -1,5 +1,5 @@
 local actions = require "telescope.actions"
-local fb_actions = require("telescope").extensions.file_browser.actions
+-- local fb_actions = require("telescope").extensions.file_browser.actions
 -- local builtin = require('telescope.builtin')
 local present, telescope = pcall(require, "telescope")
 

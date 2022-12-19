@@ -8,8 +8,8 @@ local themes = require "custom.ui.overridden_themes"
 -- example of changing theme:
 
 M.ui = {
-  theme = "tokyonight",
-  theme_toggle = { "tokyonight", "solarized_dark" },
+  theme = "ayu-dark",
+  theme_toggle = { "tokyonight", "ayu-dark" },
   transparency = "true",
   hl_override = highlights.override,
   hl_add = highlights.add,

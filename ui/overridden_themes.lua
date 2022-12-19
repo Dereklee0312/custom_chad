@@ -13,6 +13,12 @@ M.Change_theme = {
       statusline_bg = "NONE",
     },
   },
+  ayu_dark = {
+    base_30 = {
+      black2 = "NONE",
+      statusline_bg = "NONE",
+    },
+  },
 }
 
 return M

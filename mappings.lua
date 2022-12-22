@@ -120,8 +120,8 @@ M.general = {
 
   x = {
     -- Move line in visual mode
-    ["J"] = { ":move '>+1<CR>gv-gv", opts = { silent = true, noremap = true } },
-    ["K"] = { ":move '<-2<CR>gv-gv", opts = { silent = true, noremap = true } },
+    ["<A-j>"] = { ":move '>+1<CR>gv-gv=gv", opts = { silent = true, noremap = true } },
+    ["<A-k>"] = { ":move '<-2<CR>gv-gv=gv", opts = { silent = true, noremap = true } },
   },
 }
 
